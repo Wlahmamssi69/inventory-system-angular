@@ -4,6 +4,7 @@ import {PageLoginComponent} from "./pages/page-login/page-login.component";
 import {PageInscriptionComponent} from "./pages/page-inscription/page-inscription.component";
 import {PageDashboardComponent} from "./pages/page-dashboard/page-dashboard.component";
 import {PageReportsComponent} from "./pages/page-reports/page-reports.component";
+import {PageProductComponent} from "./pages/products/page-product/page-product.component";
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
         path:'reports',
         component:PageReportsComponent,
       },
+      {
+        path:'articles',
+        component:PageProductComponent,
+      }
     ]
   },
 ];
