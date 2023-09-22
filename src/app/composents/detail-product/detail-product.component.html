@@ -1,0 +1,77 @@
+ <div class=" row mb-1 mr-0 custom-border">
+   <!-- images -->
+  <div class="col-md-2 border-right">
+    <div>
+      <img src="assets/product1.jpg" width="90px" height="60px"/>
+    </div>
+  </div>
+   <!-- Detail produit -->
+   <div class="col-md-4 border-right mt-2 mb-2">
+      <div class=" col">
+        <div class="row">
+          <div class="col-md-2 grey ">
+            <fa-icon [icon]="faBarCode"></fa-icon>
+          </div>
+          <div class="col-md-10"> Code article</div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 grey">
+            <fa-icon [icon]="faCircleInfo"></fa-icon>
+          </div>
+          <div class="col-md-10"> Designation</div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 grey ">
+            <fa-icon [icon]="faDollarSign"></fa-icon>
+          </div>
+          <div class="col-md-10"> Prix unitaire</div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 grey ">
+            <fa-icon [icon]="faCube"></fa-icon>
+          </div>
+          <div class="col-md-10"> Quantité</div>
+        </div>
+      </div>
+  </div>
+   <!-- Detail category -->
+   <div class="col-md-3 pt-3 border-right">
+    <div class=" row">
+    <div class="col-md-2 blue">
+      <fa-icon [icon]="faQrcode"></fa-icon>
+    </div>
+     <div class="col-md-10">
+       <div class="row">
+         <div class="col-md-12 "> Code Categorie</div>
+         <div class="col-md-12 "> Description</div>
+
+       </div>
+     </div>
+    </div>
+  </div>
+   <!-- Bouttons -->
+   <div class="col-md-3 pt-4">
+     <div class=" row">
+        <div class="col-md-4">
+          <button type="button" class="btn btn-link ">
+            <fa-icon [icon]="faTrashCan"></fa-icon>
+            <br>Supprimer
+          </button>
+
+        </div>
+       <div class="col-md-4">
+         <button type="button" class="btn btn-link">
+           <fa-icon [icon]="faPenToSquare"></fa-icon><br>Modifier
+         </button>
+
+       </div>
+       <div class="col-md-4">
+         <button type="button" class="btn btn-link">
+           <fa-icon [icon]="faRectangleList"></fa-icon><br>Détails
+         </button>
+
+       </div>
+     </div>
+   </div>
+
+ </div>
