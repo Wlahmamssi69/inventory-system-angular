@@ -11,7 +11,15 @@ import { PageReportsComponent } from './pages/page-reports/page-reports.componen
 import { MenuComponent } from './composents/menu/menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './composents/header/header.component';
-import { PageProductComponent } from './pages/products/page-product/page-product.component'
+import { PageProductComponent } from './pages/products/page-product/page-product.component';
+import { DetailProductComponent } from './composents/detail-product/detail-product.component';
+import { PaginationComponent } from './composents/pagination/pagination.component';
+import { BtnCrudComponent } from './composents/btn-crud/btn-crud.component';
+import { NewProductComponent } from './pages/products/new-product/new-product.component';
+import { CltFrsDetailComponent } from './composents/clt-frs-detail/clt-frs-detail.component';
+import { PageClientComponent } from './pages/clients/page-client/page-client.component';
+import { PageSupplierComponent } from './pages/suppliers/page-supplier/page-supplier.component';
+import { NewCltSupComponent } from './composents/new-clt-sup/new-clt-sup.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +30,15 @@ import { PageProductComponent } from './pages/products/page-product/page-product
     PageReportsComponent,
     MenuComponent,
     HeaderComponent,
-    PageProductComponent
+    PageProductComponent,
+    DetailProductComponent,
+    PaginationComponent,
+    BtnCrudComponent,
+    NewProductComponent,
+    CltFrsDetailComponent,
+    PageClientComponent,
+    PageSupplierComponent,
+    NewCltSupComponent
   ],
   imports: [
     BrowserModule,

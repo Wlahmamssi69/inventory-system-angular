@@ -4,7 +4,9 @@
       <h3>Liste des articles</h3>
     </div>
     <div class="col-md-6">
-      <app-btn-crud></app-btn-crud>
+      <app-btn-crud (clickEvent)="nouvelArticle()">
+      </app-btn-crud>
+
     </div>
   </div>
   <div class="row m-3">

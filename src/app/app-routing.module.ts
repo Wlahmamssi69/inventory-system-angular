@@ -5,6 +5,11 @@ import {PageInscriptionComponent} from "./pages/page-inscription/page-inscriptio
 import {PageDashboardComponent} from "./pages/page-dashboard/page-dashboard.component";
 import {PageReportsComponent} from "./pages/page-reports/page-reports.component";
 import {PageProductComponent} from "./pages/products/page-product/page-product.component";
+import {NewProductComponent} from "./pages/products/new-product/new-product.component";
+import {CltFrsDetailComponent} from "./composents/clt-frs-detail/clt-frs-detail.component";
+import {PageClientComponent} from "./pages/clients/page-client/page-client.component";
+import {PageSupplierComponent} from "./pages/suppliers/page-supplier/page-supplier.component";
+import {NewCltSupComponent} from "./composents/new-clt-sup/new-clt-sup.component";
 
 const routes: Routes = [
   {
@@ -26,9 +31,30 @@ const routes: Routes = [
       {
         path:'articles',
         component:PageProductComponent,
-      }
+      },
+      {
+        path:'newarticle',
+        component:NewProductComponent,
+      },
+      {
+        path:'clients',
+        component:PageClientComponent
+      },
+      {
+        path:'newclient',
+        component:NewCltSupComponent,
+      },
+      {
+        path:'suppliers',
+        component:PageSupplierComponent
+      },
+      {
+        path:'newsupplier',
+        component:NewCltSupComponent,
+      },
     ]
   },
+
 ];
 
 @NgModule({
