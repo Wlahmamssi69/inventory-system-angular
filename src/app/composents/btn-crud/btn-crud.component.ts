@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {faPlus,faArrowUpFromBracket,faDownload} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
@@ -6,8 +6,18 @@ import {faPlus,faArrowUpFromBracket,faDownload} from "@fortawesome/free-solid-sv
   templateUrl: './btn-crud.component.html',
   styleUrls: ['./btn-crud.component.scss']
 })
-export class BtnCrudComponent {
+export class BtnCrudComponent implements OnInit{
   faPlus=faPlus;
   faArrowUpFromBracket=faArrowUpFromBracket;
   faDownload=faDownload;
+  @Output( )
+  clickEvent = new EventEmitter();
+
+  constuctor(){ }
+  ngOnInit() :void {
+  }
+
+  bouttonNouveauClick() : void {
+    this.clickEvent.emit();
+  }
 }

@@ -1,4 +1,4 @@
-
+<!--
 <div class="row">
   <div class="col-md-4 ml-0">
     <button type="button" class="btn btn-warning">
@@ -17,3 +17,19 @@
   </div>
 </div>
 
+-->
+
+<div class="col text-end">
+    <button type="button" class="btn btn-warning ms-2">
+      <fa-icon [icon]="faArrowUpFromBracket"></fa-icon>&nbsp;
+      Exporter
+    </button>
+    <button type="button" class="btn btn-success ms-2">
+      <fa-icon [icon]="faDownload"></fa-icon>&nbsp;
+      Importer
+    </button>
+    <button type="button" class="btn btn-primary ms-2" (click)="bouttonNouveauClick()">
+      <fa-icon [icon]="faPlus"></fa-icon>&nbsp;
+      Nouveau
+    </button>
+</div>
